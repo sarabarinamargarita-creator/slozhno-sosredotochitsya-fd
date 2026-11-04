@@ -227,7 +227,31 @@ font-weight: 400;
 
 @media (min-width: 768px) {
   .header {
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr min-content auto;
     padding: 20px;
+  }
+  .header__theme-menu {
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: end;
+    align-self: start;
+    margin-top: 156px;
+  }
+  .header__title {
+    grid-row: 2;
+    grid-column: 1 / -1;
+    align-self: end;
+    margin-bottom: 173px; 
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+  .header__title-decor {
+    grid-row: 3;
+    grid-column: 2;
+    justify-self: end;
+    align-self: end;
+    width: 364px;
+    margin-bottom: 183px;
   }
   .header__rec {
     top: 26px;
@@ -239,50 +263,48 @@ font-weight: 400;
   .content-section {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 10px;
+    gap: 20px;
     align-items: start;
   }
+  .content-section__title {
+    grid-column: 1;
+    max-width: 236px;
+  }
+.card {
+    grid-column: 2;
+    margin-bottom: 20px;
+  }  
+
   .content-section_type_what:nth-of-type(2) {
     grid-template-columns: 1fr;
   }
   .content-section_type_what:nth-of-type(2) 
-  .content-section__title {
-    grid-column: 1 /-1;
-  }
+  .content-section__title, 
   .content-section_type_what:nth-of-type(2) .card {
-    grid-column: 1/ -1;
-  }
-  .content-section__title {
-    grid-column: 1;
+    grid-column: 1 /-1;
+    max-width: 100%;
   }
   .content-section__title.title-decor {
     margin: 20px 0;
     width: calc(100% - 40px);
     margin-left: 20px;
+    max-width: none;
   }
-  .card {
-    grid-column: 2;
-    margin-bottom: 20px;
-  }  
   .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
-  .gallery__image:nth-child(1) {
+  .gallery__image:nth-child(1),
+  .gallery__image:nth-child(5) {
     grid-column: 1 / -1;
   }
-  .gallery__image:nth-child(2) {
+  .gallery__image:nth-child(2),
+  .gallery__image:nth-child(4) {
     grid-column: 2;
   }
   .gallery__image:nth-child(3) {
     grid-column: 1;
-  }
-  .gallery__image:nth-child(4) {
-    grid-column: 2;
-  }
-  .gallery__image:nth-child(5) {
-    grid-column: 1 / -1;
   }
   .decorated-zone::before {
     bottom: 20px;
