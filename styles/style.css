@@ -68,6 +68,8 @@
 }
 
 .header__title-decor {
+  grid-row: 3;
+  align-self: end;
   margin-bottom: 56px;
 }
 .header__rec {
@@ -121,8 +123,6 @@
 }
 
 .title-decor {
-  grid-row: 3;
-  align-self: end;
   background-color: var(--accent-color);
   color: var(--bg-color);
   font-family: 'IBM Plex mono', monospace;
@@ -257,40 +257,87 @@ font-weight: 400;
     top: 26px;
     right: 29px;
   }
+
   .content {
     padding: 60px 20px;
   }
-  .content-section {
+
+  .content-section_type_what:first-of-type {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 472px; 
     gap: 20px;
     align-items: start;
   }
-  .content-section__title {
+  
+  .content-section_type_what:first-of-type .content-section__title {
+    grid-column: 1;
+    max-width: 236px;  
+  }
+
+  .content-section_type_what:first-of-type .content-section__articles {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+  }
+  
+  
+  .content-section_type_what:first-of-type .card {
+    width: 100%; 
+  }
+  
+  .card__text {
+    max-width: 100%; 
+  }
+
+
+  .content-section_type_what:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px;
+  }
+  .content-section_type_what:nth-of-type(2) .content-section__title {
+    grid-column: 1 / -1;
+    max-width: 233px;  
+    margin-bottom: 10px;
+  }
+  .content-section_type_what:nth-of-type(2) .content-section__articles {
+    display: grid;
+    grid-template-columns: 1f; 
+    gap: 20px;
+  }
+
+
+  
+  .content-section_type_how {
+    display: grid;
+    grid-template-columns: 1fr 472px; 
+    align-items: start;
+  }
+  .content-section_type_how .content-section__title {
     grid-column: 1;
     max-width: 236px;
   }
-.card {
+  .content-section_type_how .content-section__articles {
     grid-column: 2;
-    margin-bottom: 20px;
-  }  
-
-  .content-section_type_what:nth-of-type(2) {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
-  .content-section_type_what:nth-of-type(2) 
-  .content-section__title, 
-  .content-section_type_what:nth-of-type(2) .card {
-    grid-column: 1 /-1;
+
+
+  .content-section_type_gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .content-section_type_gallery .content-section__title {
+    grid-column: 1 / -1; 
+    align-self: start; 
     max-width: 100%;
   }
-  .content-section__title.title-decor {
-    margin: 20px 0;
-    width: calc(100% - 40px);
-    margin-left: 20px;
-    max-width: none;
-  }
   .gallery {
+    grid-column: 1 / -1;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -306,6 +353,8 @@ font-weight: 400;
   .gallery__image:nth-child(3) {
     grid-column: 1;
   }
+
+
   .decorated-zone::before {
     bottom: 20px;
     left: 20px;
