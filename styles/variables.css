@@ -23,6 +23,8 @@
   --text-line-height: 1.3;
   --section-title-line-height: 1.2;
   --title-decor-line-height: 23.4px;
+
+  --accent-color-transparent: rgb(255 0 112 / 0.4);
 }
 @media (min-width: 768px) {
   :root {
