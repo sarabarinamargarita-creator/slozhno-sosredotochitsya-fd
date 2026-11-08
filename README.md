@@ -1,5 +1,7 @@
 # Сложно сосредоточиться
 
+https://github.com/sarabarinamargarita-creator/slozhno-sosredotochitsya-fd
+
 Учебный проект: адаптивный сайт с переключением светлой и тёмной тем.
 
 ## Функциональность
