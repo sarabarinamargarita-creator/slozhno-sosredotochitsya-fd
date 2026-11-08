@@ -163,7 +163,7 @@
 .content-section {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 
 .content-section__title {
@@ -273,6 +273,7 @@
     align-self: end;
     margin-bottom: 173px;
     font-size: var(--title-font-size);
+    margin-left: -20px;
   }
   .header__title-decor {
     grid-row: 3;
@@ -281,7 +282,7 @@
     align-self: end;
     width: 364px;
     line-height: var(--title-decor-line-height);
-    margin-bottom: 183px;
+    margin-bottom: 163px;
   }
   .header__title-decor .line {
     display: block;
