@@ -234,6 +234,9 @@
   height: auto;
   display: block;
 }
+.content-section_type_gallery {
+  gap: 10px;
+}
 
 .footer {
   height: 100vh;
@@ -320,7 +323,7 @@
   .content-section_type_what:nth-of-type(2) {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 10px;
   }
   .content-section_type_what:nth-of-type(2) .content-section__title {
     grid-column: 1 / -1;
