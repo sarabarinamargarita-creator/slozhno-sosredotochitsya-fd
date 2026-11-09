@@ -12,12 +12,11 @@
   --title-color: #ffc2e6;
   --title-decor-color: #353430;
   --title-decor-bg: #ff8dcb;
-  --text-shadow-color: #FF8DCB;
+  --text-shadow-color: #ff8dcb;
   --accent-color-transparent: rgb(255 141 203 / 0.4);
   --button-hover-border: rgb(53 52 48 / 0.4);
   --rec-display: none;
 }
-
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -28,10 +27,9 @@
     --title-color: #ffc2e6;
     --title-decor-color: #353430;
     --title-decor-bg: #ff8dcb;
-    --text-shadow-color: #FF8DCB;
+    --text-shadow-color: #ff8dcb;
     --accent-color-transparent: rgb(255 141 203 / 0.4);
     --button-hover-border: rgb(53 52 48 / 0.4);
     --rec-display: none;
-    }
   }
-
+}

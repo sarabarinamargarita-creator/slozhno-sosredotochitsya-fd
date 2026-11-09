@@ -3,7 +3,7 @@
   и их переопределение под различные устройства
 */
 :root {
-  --bg-image: url('../images/cover-image-dark.png');
+  --bg-image: url("../images/cover-image-dark.png");
   --bg-color: #000028;
   --accent-color: #ff0070;
   --text-color: #f1b2ce;
@@ -11,7 +11,7 @@
   --title-decor-color: #000028;
   --title-decor-bg: #ff0070;
   --text-shadow-color: #ff0070;
-  --main-font: 'IBM Plex mono', monospace;
+  --main-font: "IBM Plex mono", monospace;
 
   --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --section-title-size: 18px;
