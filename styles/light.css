@@ -7,9 +7,12 @@
 :root.theme-light {
   --bg-image: url("../images/cover-image-light.png");
   --bg-color: #fff1f7;
-  --accent-color: #ff8dcb;
+  --accent-color: #353430;
   --text-color: #353430;
   --title-color: #ffc2e6;
+  --title-decor-color: #353430;
+  --title-decor-bg: #ff8dcb;
+  --text-shadow-color: #FF8DCB;
   --accent-color-transparent: rgb(255 141 203 / 0.4);
   --button-hover-border: rgb(53 52 48 / 0.4);
   --rec-display: none;
@@ -23,6 +26,9 @@
     --accent-color: #ff8dcb;
     --text-color: #353430;
     --title-color: #ffc2e6;
+    --title-decor-color: #353430;
+    --title-decor-bg: #ff8dcb;
+    --text-shadow-color: #FF8DCB;
     --accent-color-transparent: rgb(255 141 203 / 0.4);
     --button-hover-border: rgb(53 52 48 / 0.4);
     --rec-display: none;

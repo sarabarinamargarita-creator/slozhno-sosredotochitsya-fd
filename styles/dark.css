@@ -5,13 +5,15 @@
 */
 
 :root.theme-dark {
-  --bg-image: url('../images/cover-image-dark.png');
+  --bg-image: url("../images/cover-image-dark.png");
   --bg-color: #000028;
   --accent-color: #ff0070;
   --text-color: #f1b2ce;
   --title-color: #db00ff;
+  --title-decor-color: #000028;
+  --text-shadow-color: #ff0070;
   --accent-color-transparent: rgb(255 0 112 / 0.4);
-  --button-hover-border: rgb(255 0 112 / 0.4); 
+  --button-hover-border: rgb(255 0 112 / 0.4);
   --rec-display: flex;
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,

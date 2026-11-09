@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: var(--bg-color);
-  min-height: 100vh; /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  min-height: 100vh; 
 }
 
 .header {
@@ -75,9 +75,9 @@
   font-weight: 700;
   font-size: var(--title-font-size);
   line-height: var(--title-line-height);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--text-shadow-color);
   color: var(--title-color);
-  word-break: break-word; 
+  word-break: break-word;
 }
 
 .header__title-decor .line {
@@ -93,8 +93,8 @@
 }
 
 .title-decor {
-  background-color: var(--accent-color);
-  color: var(--bg-color);
+  background-color: var(--title-decor-bg);
+  color: var(--title-decor-color);
   font-family: var(--main-font);
   font-weight: var(--font-weight-bold);
   font-size: var(--text-size);
@@ -174,14 +174,14 @@
   color: var(--accent-color);
 }
 
+.content-section__title.title-decor {
+  color: var(--title-decor-color);
+}
+
 .content-section__articles {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.content-section__title.title-decor {
-  color: var(--bg-color);
 }
 
 .card {
@@ -209,7 +209,7 @@
 .card__link {
   color: inherit;
   text-decoration: none;
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--text-shadow-color);
 }
 
 .card__link:hover {
@@ -255,7 +255,7 @@
   font-size: var(--title-font-size);
   line-height: var(--title-line-height);
   color: var(--title-color);
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--text-shadow-color);
 }
 
 .visually-hidden {
@@ -313,7 +313,7 @@
     grid-column: 1;
     max-width: 236px;
   }
-  .section-why .content-section__articles, 
+  .section-why .content-section__articles,
   .section-advices .content-section__articles {
     grid-column: 2;
   }
@@ -428,4 +428,3 @@
     line-height: 23.4px;
   }
 }
-

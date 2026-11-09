@@ -8,7 +8,9 @@
   --accent-color: #ff0070;
   --text-color: #f1b2ce;
   --title-color: #db00ff;
-
+  --title-decor-color: #000028;
+  --title-decor-bg: #ff0070;
+  --text-shadow-color: #ff0070;
   --main-font: 'IBM Plex mono', monospace;
 
   --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
