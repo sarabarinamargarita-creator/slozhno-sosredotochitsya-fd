@@ -25,6 +25,8 @@
   --title-decor-line-height: 23.4px;
 
   --accent-color-transparent: rgb(255 0 112 / 0.4);
+  --button-hover-border: rgb(255 0 112 / 0.4);
+  --rec-display: flex;
 }
 @media (min-width: 768px) {
   :root {

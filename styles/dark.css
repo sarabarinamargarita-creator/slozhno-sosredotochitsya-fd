@@ -10,7 +10,10 @@
   --accent-color: #ff0070;
   --text-color: #f1b2ce;
   --title-color: #db00ff;
-  --accent-color-transparent: rgb(255 0 112 / 0.4); /* сохраните этот селектор в приведённом виде.
+  --accent-color-transparent: rgb(255 0 112 / 0.4);
+  --button-hover-border: rgb(255 0 112 / 0.4); 
+  --rec-display: flex;
+  /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */

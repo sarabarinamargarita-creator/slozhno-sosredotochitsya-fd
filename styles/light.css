@@ -11,50 +11,10 @@
   --text-color: #353430;
   --title-color: #ffc2e6;
   --accent-color-transparent: rgb(255 141 203 / 0.4);
+  --button-hover-border: rgb(53 52 48 / 0.4);
+  --rec-display: none;
 }
 
-:root.theme-light .header__rec {
-  display: none;
-}
-
-:root.theme-light .header__theme-menu-button,
-:root.theme-light .content-section__title,
-:root.theme-light .card__text,
-:root.theme-light .card__title_regular,
-:root.theme-light .header__rec,
-:root.theme-light .header__title-decor,
-:root.theme-light .title-decor,
-:root.theme-light .decorated-zone::before,
-:root.theme-light .decorated-zone::after {
-  color: var(--text-color);
-}
-
-:root.theme-light .decorated-zone::before,
-:root.theme-light .decorated-zone::after {
-  border-color: var(--text-color);
-}
-
-:root.theme-light .header__theme-menu-button {
-  color: var(--text-color);
-  border-color: transparent;
-}
-
-:root.theme-light .title-decor {
-  background-color: var(--accent-color);
-  color: var(--text-color);
-}
-
-:root.theme-light .header__theme-menu-button:hover {
-  border: 1px solid var(--text-color);
-}
-:root.theme-light .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--text-color);
-  outline: none;
-}
-
-:root.theme-light .header__theme-menu-button_active {
-  border-color: var(--text-color);
-}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -64,46 +24,8 @@
     --text-color: #353430;
     --title-color: #ffc2e6;
     --accent-color-transparent: rgb(255 141 203 / 0.4);
-  }
-  .header__rec {
-    display: none;
-  }
-
-  .header__theme-menu-button,
-  .content-section__title,
-  .card__text,
-  .card__title_regular,
-  .header__title-decor,
-  .decorated-zone::before,
-  .decorated-zone::after {
-    color: var(--text-color);
+    --button-hover-border: rgb(53 52 48 / 0.4);
+    --rec-display: none;
+    }
   }
 
-  .decorated-zone::before,
-  .decorated-zone::after {
-    border-color: var(--text-color);
-  }
-
-.title-decor {
-    background-color: var(--accent-color);
-    color: var(--text-color);
-  }
-
-  .header__theme-menu-button {
-    color: var(--text-color);
-    border-color: transparent;
-  }
-
-  .header__theme-menu-button:hover {
-    border: 1px solid var(--text-color);
-  }
-
-  .header__theme-menu-button:focus-visible {
-    border-bottom: 1px solid var(--text-color);
-    outline: none;
-  }
-
-  .header__theme-menu-button_active {
-    border-color: var(--text-color);
-  }
-}
