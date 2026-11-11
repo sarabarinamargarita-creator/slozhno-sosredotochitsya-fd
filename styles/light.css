@@ -19,10 +19,10 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+  :root:not(.theme-dark):not(.theme-light) {
     --bg-image: url("../images/cover-image-light.png");
     --bg-color: #fff1f7;
-    --accent-color: #ff8dcb;
+    --accent-color: #353430;
     --text-color: #353430;
     --title-color: #ffc2e6;
     --title-decor-color: #353430;
